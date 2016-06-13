@@ -1,0 +1,32 @@
+.floating-panel {
+  background: $abxy-yellow;
+  z-index: -1;
+  @extend .dead-center;
+
+  &.atelier-panel {
+    width: 600px;
+    height: 400px;
+    right: 100px;
+  }
+}
+
+.main {
+  z-index: 10;
+}
+
+.em-subheading {
+  display: block;
+  margin: 1em 0;
+}
+
+.main img {
+  @extend .z-depth-1;
+}
+
+
+// Helpers
+.sm-top-offset-75 {
+  @media(min-width: $screen-sm-min) {
+    padding-top: 75px;
+  }
+}

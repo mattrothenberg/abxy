@@ -1,5 +1,6 @@
 .navbar {
-  background: transparent;
+  background: white;
+  z-index: 100;
 }
 
 .navbar-brand {
@@ -13,6 +14,10 @@
 .navbar-brand img {
   height: 100%;
   width: auto;
+}
+
+.navbar-nav li.current_page_item a {
+  color: $gray-dark;
 }
 
 @media(min-width: $screen-sm-min) {

@@ -8,3 +8,15 @@ $sidebar-sm-columns:    4;
 // Colors
 $brand-primary:         #27ae60;
 $font-family-sans-serif:  "Maison Neue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$abxy-yellow: #FFFAE6;
+
+
+.dead-center {
+  margin: auto;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.z-depth-1 {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}

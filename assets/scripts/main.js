@@ -27,7 +27,7 @@
     // Home page
     'home': {
       init: function() {
-        // JavaScript to be fired on the home page
+        var rellax = new Rellax('.rellax');
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
