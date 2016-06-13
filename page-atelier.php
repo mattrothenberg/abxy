@@ -28,7 +28,6 @@
       <button class="btn btn-small btn-transparent" href="#">Download Artist's Press Pack</button>
     </div>
   </div>
-  <hr>
   <div class="row artist-row">
     <div class="artist-image">
       <img class="img-responsive" src="http://placekitten.com/700/500" alt="" />
@@ -59,6 +58,4 @@
       <button class="btn btn-small btn-transparent" href="#">Download Artist's Press Pack</button>
     </div>
   </div>
-
-  <hr>
 <?php endwhile; ?>

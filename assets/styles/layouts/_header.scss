@@ -7,13 +7,52 @@
   height: 85px;
 }
 
-.navbar-toggle {
+.navbar .navbar-toggle {
   top: 18px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    width: 20px;
+    height: 20px;
+    background: $abxy-yellow;
+    content: '';
+    position: absolute;
+    top: -1px;
+    right: 19px;
+    z-index: -1;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all .2s ease-out;
+  }
+
+  .icon-bar {
+    background: $gray-light;
+    transition: background .2s ease-out;
+  }
+
+  &:hover, &:active, &:focus {
+    background-color: transparent;
+
+    &:before {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+
+    .icon-bar {
+      background-color: $gray-dark;
+    }
+  }
 }
 
 .navbar-brand img {
   height: 100%;
   width: auto;
+}
+
+.navbar-nav li a {
+  transition: color .2s ease-out;
 }
 
 .navbar-nav li.current_page_item a {

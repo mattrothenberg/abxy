@@ -6,7 +6,7 @@
   &.atelier-panel {
     width: 600px;
     height: 400px;
-    right: 100px;
+    right: -180px;
   }
 }
 
@@ -25,6 +25,11 @@
 
 .artist-row {
   padding: 15px 0;
+  border-bottom: 1px solid $gray-lighter;
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
 }
 
 .artist-bio, .artist-image {
@@ -48,7 +53,7 @@
 
 @media(min-width: $screen-sm-min) {
   .artist-row {
-    padding: 25px 0;
+    padding: 45px 0;
   }
 
   .artist-row h2 {
@@ -64,6 +69,7 @@
   border-radius: 0px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-top: 10px;
   transition: background .2s ease-out;
 
   &:hover {
