@@ -8,6 +8,18 @@
     height: 400px;
     right: -180px;
   }
+
+  &.private-panel {
+    width: 700px;
+    height: 500px;
+    top: 100px;
+  }
+}
+
+.atelier-content {
+  @media(min-width: $screen-sm-min) {
+    padding-left: 50px;
+  }
 }
 
 .main {
@@ -19,8 +31,50 @@
   margin: 1em 0;
 }
 
-.main img {
-  @extend .z-depth-1;
+.carousel {
+  .slick-arrow {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+    z-index: 15;
+
+    &.slick-prev {
+      background-image: url(../images/left-arrow.svg);
+      left: 0px;
+
+      @media(min-width: $screen-sm-min) {
+        left: -55px;
+      }
+    }
+
+    &.slick-next {
+      background-image: url(../images/right-arrow.svg);
+      right: 0px;
+
+      @media(min-width: $screen-sm-min) {
+        right: -15px;
+      }
+    }
+  }
+}
+
+.carousel-slide {
+  margin: 0 15px;
+
+  @media(min-width: $screen-sm-min) {
+    margin-right: 30px;
+  }
+
+  img {
+    transition: box-shadow .2s ease-out;
+  }
+
+  &.slick-current img {
+    @extend .z-depth-1;
+  }
+
 }
 
 .artist-row {

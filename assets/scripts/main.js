@@ -18,7 +18,7 @@
     // All pages
     'common': {
       init: function() {
-        // JavaScript to be fired on all pages
+        window.DEBUG = false;
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -28,15 +28,18 @@
     'home': {
       init: function() {
         var rellax = new Rellax('.rellax');
+        var carousel = $('.carousel').slick({
+          autoplay: true
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
       }
     },
     // About us page, note the change from about-us to about_us.
-    'about_us': {
+    'private_client': {
       init: function() {
-        // JavaScript to be fired on the about us page
+        var rellax = new Rellax('.rellax');
       }
     }
   };

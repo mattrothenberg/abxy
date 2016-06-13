@@ -1,15 +1,27 @@
 <?php while (have_posts()) : the_post(); ?>
   <div class="floating-panel atelier-panel rellax" data-rellax-speed="1"></div>
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-sm-push-6 sm-top-offset-75">
+    <div class="col-xs-12 col-sm-6 col-sm-push-6 sm-top-offset-75 atelier-content">
       <h1><?php the_title(); ?></h1>
       <div class="lead">
         <?php get_template_part('templates/content', 'page'); ?>
       </div>
     </div>
     <div class="col-xs-12 col-sm-6 col-sm-pull-6">
-      <img class="img-responsive" src="http://placekitten.com/700/500" alt="" />
-      <em class="em-subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</em>
+      <div class="carousel">
+        <div class="carousel-slide">
+          <img class="img-responsive" src="http://placekitten.com/700/500" alt="" />
+          <em class="em-subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</em>
+        </div>
+        <div class="carousel-slide">
+          <img class="img-responsive" src="http://placekitten.com/700/480" alt="" />
+          <em class="em-subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</em>
+        </div>
+        <div class="carousel-slide">
+          <img class="img-responsive" src="http://placekitten.com/700/490" alt="" />
+          <em class="em-subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</em>
+        </div>
+      </div>
     </div>
   </div>
   <div class="row">
