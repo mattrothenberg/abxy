@@ -23,6 +23,47 @@
   @extend .z-depth-1;
 }
 
+.artist-bio, .artist-image {
+  @extend .col-xs-12;
+  @extend .col-sm-6;
+}
+
+.artist-row:nth-of-type(even) {
+  .artist-image {
+    @extend .col-sm-push-6;
+  }
+
+  .artist-bio {
+    @extend .col-sm-pull-6;
+  }
+}
+
+.artist-row h2 {
+  font-weight: bold;
+}
+
+@media(min-width: $screen-sm-min) {
+
+  .artist-row h2 {
+    margin-top: 0;
+  }
+}
+
+.btn-transparent {
+  background: transparent;
+  font-weight: bold;
+  border-color: $gray-dark;
+  border-width: 2px;
+  border-radius: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: background .2s ease-out;
+
+  &:hover {
+    background: rgba(255,255,255, .75);
+  }
+}
+
 
 // Helpers
 .sm-top-offset-75 {
