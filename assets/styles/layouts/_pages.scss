@@ -23,6 +23,10 @@
   @extend .z-depth-1;
 }
 
+.artist-row {
+  padding: 15px 0;
+}
+
 .artist-bio, .artist-image {
   @extend .col-xs-12;
   @extend .col-sm-6;
@@ -43,6 +47,9 @@
 }
 
 @media(min-width: $screen-sm-min) {
+  .artist-row {
+    padding: 25px 0;
+  }
 
   .artist-row h2 {
     margin-top: 0;
