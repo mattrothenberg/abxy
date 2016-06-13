@@ -1,0 +1,26 @@
+.navbar {
+  background: transparent;
+}
+
+.navbar-brand {
+  height: 85px;
+}
+
+.navbar-toggle {
+  top: 18px;
+}
+
+.navbar-brand img {
+  height: 100%;
+  width: auto;
+}
+
+@media(min-width: $screen-sm-min) {
+  .navbar-brand {
+    height: 105px;
+  }
+
+  .navbar-nav li a {
+    line-height: 75px;
+  }
+}
