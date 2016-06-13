@@ -1,1 +1,37 @@
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('../fonts/maison-neue-light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/maison-neue-light.woff') format('woff'),
+       url('../fonts/maison-neue-light.ttf') format('truetype'),
+       url('../fonts/maison-neue-light.svg#maison-neue-light') format('svg');
+  font-style: normal;
+  font-weight: 300;
+}
 
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('../fonts/maison-neue-light-italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/maison-neue-light-italic.woff') format('woff'),
+       url('../fonts/maison-neue-light-italic.ttf') format('truetype'),
+       url('../fonts/maison-neue-light-italic.svg#maison-neue-light-italic') format('svg');
+  font-style: italic;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('../fonts/maison-neue-bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/maison-neue-bold.woff') format('woff'),
+       url('../fonts/maison-neue-bold.ttf') format('truetype'),
+       url('../fonts/maison-neue-bold.svg#maison-neue-bold') format('svg');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('../fonts/maison-neue-bold-italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/maison-neue-bold-italic.woff') format('woff'),
+       url('../fonts/maison-neue-bold-italic.ttf') format('truetype'),
+       url('../fonts/maison-neue-bold-italic.svg#maison-neue-bold-italic') format('svg');
+  font-style: italic;
+  font-weight: 700;
+}
