@@ -29,11 +29,11 @@
       init: function() {
         var rellax = new Rellax('.rellax');
         var carousel = $('.carousel').slick({
-          autoplay: true
+          autoplay: true,
+          fade: true
         });
       },
       finalize: function() {
-        // JavaScript to be fired on the home page, after the init JS
       }
     },
     // About us page, note the change from about-us to about_us.

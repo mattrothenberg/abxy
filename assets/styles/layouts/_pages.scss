@@ -38,10 +38,14 @@
     background-size: 100%;
     width: 25px;
     height: 25px;
-    z-index: 15;
+
+    &:before {
+      content: none;
+    }
 
     &.slick-prev {
       background-image: url(../images/left-arrow.svg);
+      background-repeat: no-repeat;
       left: 0px;
 
       @media(min-width: $screen-sm-min) {
@@ -51,10 +55,13 @@
 
     &.slick-next {
       background-image: url(../images/right-arrow.svg);
+      background-repeat: no-repeat;
       right: 0px;
 
       @media(min-width: $screen-sm-min) {
-        right: -15px;
+        &.slick-next {
+          right: -15px;
+        }
       }
     }
   }
@@ -77,7 +84,7 @@
 
 }
 
-.artist-row {
+section.artist-box {
   padding: 15px 0;
   border-bottom: 1px solid $gray-lighter;
 
@@ -91,7 +98,11 @@
   @extend .col-sm-6;
 }
 
-.artist-row:nth-of-type(even) {
+.artist-image img {
+  @extend .z-depth-1;
+}
+
+section.artist-box:nth-of-type(even) {
   .artist-image {
     @extend .col-sm-push-6;
   }
@@ -106,8 +117,12 @@
 }
 
 @media(min-width: $screen-sm-min) {
-  .artist-row {
-    padding: 45px 0;
+  section.artist-box {
+    padding: 75px 0;
+
+    &:first-of-type {
+      padding-top: 35px;
+    }
   }
 
   .artist-row h2 {
