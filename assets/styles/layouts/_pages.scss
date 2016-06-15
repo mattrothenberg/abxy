@@ -1,7 +1,26 @@
 .floating-panel {
+  opacity: 0;
   background: $abxy-yellow;
   z-index: -1;
   @extend .dead-center;
+  transition: opacity .2s ease-out;
+
+  @media(min-width: $screen-sm-min) {
+    opacity: 1;
+  }
+
+  &.contact-panel {
+    width: 770px;
+    height: 400px;
+    right: 90px;
+    top: 60px;
+  }
+
+  &.about-panel {
+    width: 600px;
+    height: 400px;
+    right: -180px;
+  }
 
   &.atelier-panel {
     width: 600px;
@@ -13,6 +32,14 @@
     width: 700px;
     height: 500px;
     top: 100px;
+  }
+}
+
+.mbxl {
+  margin-bottom: 25px;
+
+  @media(min-width: $screen-sm-min) {
+    margin-bottom: 0;
   }
 }
 
@@ -148,6 +175,12 @@ section.artist-box:nth-of-type(even) {
 
 
 // Helpers
+.sm-top-offset-small {
+  @media(min-width: $screen-sm-min) {
+    padding-top: 25px;
+  }
+}
+
 .sm-top-offset-75 {
   @media(min-width: $screen-sm-min) {
     padding-top: 75px;

@@ -57,6 +57,11 @@
 
 .navbar-nav li.current_page_item a {
   color: $gray-dark;
+
+  &:before {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 @media(min-width: $screen-sm-min) {
@@ -66,5 +71,30 @@
 
   .navbar-nav li a {
     line-height: 75px;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      opacity: 0;
+      transform: translateY(-20px);
+      z-index: -1;
+      content: '';
+      height: 25px;
+      width: 35px;
+      top: 38px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      background: $abxy-yellow;
+      position: absolute;
+      transition: all .2s ease-out;
+    }
+
+    &:hover {
+      &:before {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
   }
 }
