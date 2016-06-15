@@ -73,6 +73,8 @@
     line-height: 75px;
     position: relative;
     overflow: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(1000px);
 
     &:before {
       opacity: 0;
