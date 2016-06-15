@@ -153,3 +153,11 @@ section.artist-box:nth-of-type(even) {
     padding-top: 75px;
   }
 }
+
+.heading-sm-right {
+  text-align: left;
+
+  @media(min-width: $screen-sm-min) {
+    text-align: right;
+  }
+}
