@@ -81,12 +81,11 @@
       transform: translateY(-20px);
       z-index: -1;
       content: '';
-      height: 25px;
-      width: 35px;
-      top: 38px;
+      height: 20px;
+      width: 20px;
+      top: 30px;
       right: 0;
-      left: 0;
-      margin: 0 auto;
+      left: 10px;
       background: $abxy-yellow;
       position: absolute;
       transition: all .2s ease-out;

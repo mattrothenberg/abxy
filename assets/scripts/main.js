@@ -19,6 +19,10 @@
     'common': {
       init: function() {
         window.DEBUG = false;
+        if ( $('.rellax').length > 0 ) {
+          console.log('here!');
+          var rellax = new Rellax('.rellax');
+        }
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -27,7 +31,6 @@
     // Home page
     'home': {
       init: function() {
-        var rellax = new Rellax('.rellax');
         var carousel = $('.carousel').slick({
           autoplay: true,
           fade: true
@@ -39,7 +42,6 @@
     // About us page, note the change from about-us to about_us.
     'private_client': {
       init: function() {
-        var rellax = new Rellax('.rellax');
       }
     }
   };
