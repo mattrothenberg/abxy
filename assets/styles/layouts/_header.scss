@@ -55,7 +55,7 @@
   transition: color .2s ease-out;
 }
 
-.navbar-nav li.current_page_item a {
+.navbar-nav li.current_page_item a, .navbar-nav li.current_page_parent a {
   color: $gray-dark;
 
   &:before {

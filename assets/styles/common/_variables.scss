@@ -6,11 +6,11 @@ $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 // Colors
-$brand-primary:           #27ae60;
+$brand-primary: #1abc9c !default;
 $font-size-base:          16px !default;
 $font-family-sans-serif:  "Maison Neue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$abxy-yellow: lighten(#FFFAE6, 2%);
-$link-color: #2C9E90 !default;
+$abxy-yellow: #FFFAE6;
+$link-color: #1abc9c !default;
 
 .dead-center {
   margin: auto;
