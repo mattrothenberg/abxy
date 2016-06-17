@@ -3,6 +3,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+::selection {
+  background: rgba($brand-primary, .25); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgba($brand-primary, .25); /* Gecko Browsers */
+}
+
 .slick-list {
     .slick-loading & {
         background: #fff url("../images/ajax-loader.gif") center center no-repeat;
@@ -12,6 +19,18 @@ body {
 main {
   img {
     @extend .z-depth-1;
+  }
+}
+
+.about-ab-content {
+  @media(min-width: $screen-sm-min) {
+    padding-top: 45px;
+  }
+}
+
+.contact-page-content {
+  @media(min-width: $screen-sm-min) {
+    padding-top: 35px;
   }
 }
 
@@ -194,6 +213,7 @@ section.artist-box:nth-of-type(odd) {
 .btn-transparent {
   background: transparent;
   font-weight: bold;
+  outline-color: $gray-lighter !important;
   border-color: $gray-dark;
   border-width: 2px;
   border-radius: 0px;
