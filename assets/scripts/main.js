@@ -19,10 +19,11 @@
     'common': {
       init: function() {
         window.DEBUG = false;
+
         if ( $('.rellax').length > 0 ) {
-          console.log('here!');
           var rellax = new Rellax('.rellax');
         }
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -35,6 +36,17 @@
           autoplay: true,
           fade: true
         });
+
+        window.sr = new ScrollReveal();
+        sr.reveal('.artist-box-secondary', {
+          origin: 'top',
+          duration: 500,
+          scale: 1,
+          reset: true,
+          distance: 0,
+          viewFactor  : 0.2,
+        });
+
       },
       finalize: function() {
       }

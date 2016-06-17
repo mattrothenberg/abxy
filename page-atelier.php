@@ -24,8 +24,9 @@
       <h1>The Artists</h1>
     </div>
   </div>
+  <?php $counter = 0; ?>
   <?php if( have_rows('artists') ): while ( have_rows('artists') ) : the_row(); ?>
-    <section class="artist-box">
+    <section class="artist-box <?php echo $counter > 0 ? 'artist-box-secondary' : '' ?>">
       <div class="row artist-row">
         <?php $image = get_sub_field('artist_photo');
         if( !empty($image) ): ?>
@@ -40,5 +41,5 @@
         </div>
       </div>
     </section>
-  <?php endwhile; endif; ?>
+  <?php $counter++; endwhile; endif; ?>
 <?php endwhile; ?>
