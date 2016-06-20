@@ -18,16 +18,8 @@
     // All pages
     'common': {
       init: function() {
-        window.DEBUG = false;
       },
       finalize: function() {
-        if ( $('.rellax').length > 0 ) {
-          try {
-            var rellax = new Rellax('.rellax');
-          } catch (e) {
-            console.log('error', e);
-          }
-        }
       }
     },
     // Home page
@@ -35,7 +27,8 @@
       init: function() {
         var carousel = $('.carousel').slick({
           autoplay: true,
-          fade: true
+          fade: true,
+          dots: true
         });
 
         window.sr = new ScrollReveal();

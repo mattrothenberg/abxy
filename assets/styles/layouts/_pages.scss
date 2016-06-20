@@ -16,24 +16,6 @@ body {
     }
 }
 
-main {
-  img {
-    @extend .z-depth-1;
-  }
-}
-
-.about-ab-content {
-  @media(min-width: $screen-sm-min) {
-    padding-top: 45px;
-  }
-}
-
-.contact-page-content {
-  @media(min-width: $screen-sm-min) {
-    padding-top: 35px;
-  }
-}
-
 .floating-panel {
   opacity: 0;
   background: $abxy-yellow;
@@ -328,4 +310,20 @@ article.post {
 .col-centered {
   margin: 0 auto;
   float: none !important;
+}
+
+.artist-link {
+  display: inline-block;
+  color: $gray;
+  margin: 1em 0;
+  text-decoration: none;
+  padding-bottom: 7px;
+  box-shadow: inset 0 -1px 0 0 $gray-light;
+  transition: box-shadow .2s ease-out;
+
+  &:hover, &:focus, &:visited {
+    text-decoration: none;
+    color: $gray;
+    box-shadow: inset 0 -1px 0 0 $gray-dark;
+  }
 }
