@@ -19,14 +19,15 @@
     'common': {
       init: function() {
         window.DEBUG = false;
-
-        if ( $('.rellax').length > 0 ) {
-          var rellax = new Rellax('.rellax');
-        }
-
       },
       finalize: function() {
-        // JavaScript to be fired on all pages, after page specific JS is fired
+        if ( $('.rellax').length > 0 ) {
+          try {
+            var rellax = new Rellax('.rellax');
+          } catch (e) {
+            console.log('error', e);
+          }
+        }
       }
     },
     // Home page

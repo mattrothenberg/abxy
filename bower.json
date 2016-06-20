@@ -10,7 +10,8 @@
     "bootstrap-sass": "3.3.6",
     "rellax": "git@github.com:dixonandmoe/rellax.git",
     "slick-carousel": "^1.6.0",
-    "scrollreveal": "^3.1.4"
+    "scrollreveal": "^3.1.4",
+    "es5-shim": "^4.5.9"
   },
   "overrides": {
     "bootstrap-sass": {
