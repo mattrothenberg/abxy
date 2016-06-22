@@ -30,17 +30,6 @@
           fade: true,
           dots: true
         });
-
-        window.sr = new ScrollReveal();
-        sr.reveal('.artist-box-secondary', {
-          origin: 'top',
-          duration: 500,
-          scale: 1,
-          reset: true,
-          distance: 0,
-          viewFactor  : 0.2,
-        });
-
       },
       finalize: function() {
       }

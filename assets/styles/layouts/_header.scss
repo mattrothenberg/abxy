@@ -53,6 +53,7 @@
 
 .navbar-nav li a {
   transition: color .2s ease-out;
+  text-transform: uppercase;
 }
 
 .navbar-nav li.current_page_item a, .navbar-nav li.current_page_parent a {
@@ -82,22 +83,5 @@
 
     &:hover {
     }
-  }
-}
-
-.content-heading {
-  margin-top: 0;
-  text-transform: uppercase;
-  @extend .h3;
-  letter-spacing: .25pt;
-
-  &.add-top-marg {
-    margin-top: 35px;
-  }
-}
-
-main {
-  @media(min-width: $screen-sm-min) {
-    padding: 35px 0 55px;
   }
 }
