@@ -18,9 +18,10 @@ body {
 
 .content-heading {
   margin-top: 0;
+  margin-bottom: 20px;
   text-transform: uppercase;
   @extend .h3;
-  letter-spacing: .25pt;
+  letter-spacing: 1.25pt;
 
   &.add-top-marg {
     margin-top: 35px;
@@ -30,7 +31,12 @@ body {
 main {
   @media(min-width: $screen-sm-min) {
     padding: 35px 0 55px;
+
+    p {
+      font-size: 14px;
+    }
   }
+
 }
 
 

@@ -35,3 +35,35 @@
   font-style: italic;
   font-weight: 700;
 }
+
+// AVENIR
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirNext-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/AvenirNext-Regular.woff') format('woff'),
+       url('../fonts/AvenirNext-Regular.ttf') format('truetype'),
+       url('../fonts/AvenirNext-Regular.svg#avenirnext-light') format('svg');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirNext-Italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/AvenirNext-Italic.woff') format('woff'),
+       url('../fonts/AvenirNext-Italic.ttf') format('truetype'),
+       url('../fonts/AvenirNext-Italic.svg#avenirnext-light-italic') format('svg');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirNext-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/AvenirNext-Regular.woff') format('woff'),
+       url('../fonts/AvenirNext-Regular.ttf') format('truetype'),
+       url('../fonts/AvenirNext-Regular.svg#avenirnext-light-regular') format('svg');
+  font-style: normal;
+  font-weight: 700;
+}

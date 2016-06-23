@@ -54,6 +54,7 @@
 .navbar-nav li a {
   transition: color .2s ease-out;
   text-transform: uppercase;
+  letter-spacing: .5pt;
 }
 
 .navbar-nav li.current_page_item a, .navbar-nav li.current_page_parent a {
@@ -67,7 +68,7 @@
 
 @media(min-width: $screen-sm-min) {
   .navbar-brand {
-    height: 105px;
+    height: 111px;
   }
 
   .navbar-nav li:last-of-type a {
