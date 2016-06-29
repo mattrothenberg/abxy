@@ -24,19 +24,16 @@
     },
     // Home page
     'home': {
+      init: function() {},
+      finalize: function() {
+      }
+    },
+    'atelier': {
       init: function() {
         var carousel = $('.carousel').slick({
           autoplay: true,
           fade: true,
-          dots: true
         });
-      },
-      finalize: function() {
-      }
-    },
-    // About us page, note the change from about-us to about_us.
-    'private_client': {
-      init: function() {
       }
     }
   };

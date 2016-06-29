@@ -21,6 +21,7 @@ body {
   margin-bottom: 20px;
   text-transform: uppercase;
   @extend .h3;
+  font-size: 24px;
   letter-spacing: 1.25pt;
 
   &.add-top-marg {
@@ -86,6 +87,7 @@ main {
     background-size: 100%;
     width: 25px;
     height: 25px;
+    z-index: 10;
 
     &:before {
       content: none;
@@ -339,5 +341,17 @@ article.post {
   li a {
     text-transform: uppercase;
     color: $gray-dark;
+  }
+}
+
+.credits-copy {
+  margin-bottom: 1em;
+
+  @media(min-width: 768px) {
+    margin-bottom: 0;
+  }
+  
+  p {
+    margin-bottom: 0px;
   }
 }

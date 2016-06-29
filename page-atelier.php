@@ -25,9 +25,6 @@
       <h1 class="content-heading add-top-marg">
         The Artists
       </h1>
-      <p class="lead">
-        Click Arist Name to Download Press Pack
-      </p>
     </div>
   </div>
   <?php if( have_rows('artists') ): while ( have_rows('artists') ) : the_row(); ?>

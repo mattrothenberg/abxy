@@ -67,3 +67,14 @@
   font-style: normal;
   font-weight: 700;
 }
+
+
+@font-face {
+  font-family: 'Europa';
+  src: url('../fonts/EuropaLight.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/EuropaLight.woff') format('woff'),
+       url('../fonts/EuropaLight.ttf') format('truetype'),
+       url('../fonts/EuropaLight.svg#europa-regular') format('svg');
+  font-style: normal;
+  font-weight: 400;
+}
