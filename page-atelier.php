@@ -2,6 +2,10 @@
   <div class="row">
     <div class="col-xs-12 col-sm-5">
       <h1 class="text-center content-heading"><?php the_title(); ?></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-5">
       <div class="text-justify">
         <?php get_template_part('templates/content', 'page'); ?>
       </div>
