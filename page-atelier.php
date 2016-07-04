@@ -34,7 +34,7 @@
   <?php if( have_rows('artists') ): while ( have_rows('artists') ) : the_row(); ?>
     <div class="row">
       <div class="col-sm-12 text-center">
-        <a href="#" class="artist-link"><?php the_sub_field('artist_name'); ?></a>
+        <a href="<?php the_sub_field('artist_press_pack'); ?>" target="_blank" class="artist-link"><?php the_sub_field('artist_name'); ?></a>
       </div>
     </div>
   <?php endwhile; endif; ?>
