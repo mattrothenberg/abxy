@@ -38,8 +38,15 @@ main {
     }
   }
 
-}
+  a {
+  color: inherit;
+  text-decoration: underline;
 
+    &:hover {
+      color: inherit;
+    }
+  }
+}
 
 .mbxl {
   margin-bottom: 25px;
@@ -329,6 +336,7 @@ article.post {
   }
 
   .splash-logo {
+    max-width: 452px;
     margin: 0 auto;
   }
 }

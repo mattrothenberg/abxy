@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
-        <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/assets/images/abxy-logo.jpg' ?>" alt="" />
+        <img class="img-responsive" src="<?php echo get_template_directory_uri() . '/assets/images/abxy-logo.svg' ?>" alt="" />
       </a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
