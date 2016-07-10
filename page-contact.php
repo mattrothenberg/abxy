@@ -6,7 +6,7 @@
   </div>
   <div class="row">
     <div class="col-xs-12 col-sm-5">
-      <div class="text-justify">
+      <div class="text-center">
         <?php get_template_part('templates/content', 'page'); ?>
       </div>
     </div>
