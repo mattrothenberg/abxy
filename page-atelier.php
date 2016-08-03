@@ -29,6 +29,7 @@
       <h1 class="content-heading add-top-marg">
         The Artists
       </h1>
+      <p>PDFs available for download</p>
     </div>
   </div>
   <?php if( have_rows('artists') ): while ( have_rows('artists') ) : the_row(); ?>
