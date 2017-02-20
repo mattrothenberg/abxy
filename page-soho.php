@@ -1,4 +1,4 @@
-<?php while (have_posts()) : the_post(); ?>
+  <?php while (have_posts()) : the_post(); ?>
   <div class="row">
     <div class="col-xs-12 col-sm-5">
       <h1 class="text-center content-heading"><?php the_title(); ?></h1>

@@ -28,7 +28,7 @@
       finalize: function() {
       }
     },
-    'atelier': {
+    'soho': {
       init: function() {
         var carousel = $('.carousel').slick({
           autoplay: true,
