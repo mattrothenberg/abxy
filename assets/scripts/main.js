@@ -9,7 +9,6 @@
  * The routing is enclosed within an anonymous function so that you can
  * always reference jQuery with $, even when in .noConflict() mode.
  * ======================================================================== */
-
 (function($) {
 
   // Use this variable to set up the common and page specific functions. If you
@@ -18,6 +17,12 @@
     // All pages
     'common': {
       init: function() {
+        if (document.body.classList.contains('page-template-page-about')) {
+          var carousel = $('.carousel').slick({
+            autoplay: true,
+            fade: true,
+          })
+        }
       },
       finalize: function() {
       }
@@ -26,14 +31,6 @@
     'home': {
       init: function() {},
       finalize: function() {
-      }
-    },
-    'soho': {
-      init: function() {
-        var carousel = $('.carousel').slick({
-          autoplay: true,
-          fade: true,
-        });
       }
     }
   };
